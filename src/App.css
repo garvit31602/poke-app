@@ -1,0 +1,72 @@
+.top{
+  margin-top: 25px;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body{
+      background-color: rgb(17,17,17);
+      color: white;
+}
+
+.app-container {
+  text-align: center;
+}
+
+.heading{
+  font-size: 30px;
+  font-family: 'fantasy';
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.pokemon-container {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pokemon-card {
+  width: 150px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff; /* Light background color for cards */
+  color: #333; /* Text color for cards */
+}
+
+.pokemon-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.pokemon-card img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  display: block;
+}
+
+.pokemon-card p {
+  margin-top: 8px;
+  text-transform: capitalize; /* Capitalize the first letter of each word */
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: cursive;
+}
+
