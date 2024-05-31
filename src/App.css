@@ -70,3 +70,14 @@ body{
   font-family: cursive;
 }
 
+.next{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  margin-right: auto;       
+  margin-left: auto;
+}
+
