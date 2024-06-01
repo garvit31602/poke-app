@@ -62,7 +62,7 @@ function App() {
       </div>
       <div className='footer'>
       <button className="prev" onClick={decOffset}>Prev</button>
-      page no. {offset/30}
+      page no. {offset/30 + 1}
       <button className="next" onClick={incOffset}>Next</button>
       </div>
     </div>
