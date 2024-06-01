@@ -70,14 +70,21 @@ body{
   font-family: cursive;
 }
 
-.next{
+.footer{
+  display: flex;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 10px;  
+  justify-content: space-evenly;
+}
+
+.next{
   font-size: 20px;
   width: 100px;
-  display: flex;
-  justify-content: center;
-  margin-right: auto;       
-  margin-left: auto;
 }
+
+.prev{
+  font-size: 20px;
+  width: 100px;
+}
+
 

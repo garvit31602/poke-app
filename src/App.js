@@ -19,9 +19,13 @@ function App() {
     fetchData();
   }, [offset]);
 
-  const changeOffset = () =>{
+  const incOffset = () =>{
     setOffset(prevOffset => prevOffset+30)
-    console.log(offset)
+  }
+
+  const decOffset = () =>{
+    if(offset>0)
+      setOffset(prevOffset => prevOffset-30)
   }
 
   const handleSearch = (event) => {
@@ -56,7 +60,11 @@ function App() {
           </div>
         ))}
       </div>
-      <button className="next" onClick={changeOffset}>Next</button>
+      <div className='footer'>
+      <button className="prev" onClick={decOffset}>Prev</button>
+      page no. {offset/30}
+      <button className="next" onClick={incOffset}>Next</button>
+      </div>
     </div>
   );
 }
