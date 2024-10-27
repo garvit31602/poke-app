@@ -1,16 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import './App.css'
+import Popup from './Popup'
+import Signup from './Signup'
 
 function App() {
   const [pokemonData, setPokemonData] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [offset,setOffset]=useState(0);
 
+//async makes a function return a Promise
+//await makes a function wait for a Promise
+
   useEffect(() => {
-    const fetchData = async () => {
+    const fetchData = async function Myfunction(){
       try {
         const response = await fetch(`https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=30`);
-        const data = await response.json();
+        const data = await response.json();   
         setPokemonData(data.results);
       } catch (error) {
         console.error('Error fetching data:', error);
@@ -38,6 +43,7 @@ function App() {
 
   return (
     <div className="App">
+    <Popup/>
       <div className='top'>
       <div className='heading'>Pokemon Search</div>
       <input
